@@ -1,0 +1,1 @@
+"""Cover Letter domain layer."""

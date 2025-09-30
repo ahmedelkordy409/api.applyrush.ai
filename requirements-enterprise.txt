@@ -1,0 +1,120 @@
+# JobHire.AI Enterprise Requirements
+
+# Core Framework
+fastapi[all]==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+python-multipart==0.0.6
+
+# Database & ODM
+motor==3.3.2
+pymongo==4.6.0
+beanie==1.24.0
+redis[hiredis]==5.0.1
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[argon2]==1.7.4
+python-multipart==0.0.6
+PyJWT==2.8.0
+cryptography==41.0.7
+argon2-cffi==23.1.0
+
+# Data Validation & Serialization
+pydantic[email]==2.5.0
+pydantic-settings==2.1.0
+pydantic-core==2.14.0
+
+# Async & Concurrency
+asyncio-mqtt==0.16.1
+aioredis==2.0.1
+aiocache==0.12.2
+aiofiles==23.2.1
+
+# Message Queue & Background Tasks
+celery[redis]==5.3.4
+kombu==5.3.4
+flower==2.0.1
+
+# HTTP Clients
+httpx==0.25.2
+aiohttp==3.9.1
+requests==2.31.0
+
+# AI & ML
+openai==1.3.7
+langchain==0.0.335
+langchain-community==0.0.6
+langgraph==0.2.34
+langchain-openai==0.2.1
+replicate==0.15.8
+
+# Job Scraping & Automation
+selenium==4.15.2
+playwright==1.40.0
+webdriver-manager==4.0.1
+beautifulsoup4==4.12.2
+
+# Data Processing
+pandas==2.1.3
+numpy==1.25.2
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Configuration & Environment
+python-dotenv==1.0.0
+dynaconf==3.2.4
+
+# Monitoring & Observability
+prometheus-client==0.19.0
+structlog==23.2.0
+sentry-sdk[fastapi]==1.40.0
+opentelemetry-api==1.21.0
+opentelemetry-sdk==1.21.0
+opentelemetry-instrumentation-fastapi==0.42b0
+opentelemetry-instrumentation-pymongo==0.42b0
+opentelemetry-instrumentation-redis==0.42b0
+opentelemetry-exporter-jaeger==1.21.0
+psutil==5.9.6
+
+# Email & Notifications
+aiosmtplib==3.0.1
+jinja2==3.1.2
+
+# Payment Processing
+stripe==7.7.0
+
+# API Documentation
+mkdocs==1.5.3
+mkdocs-material==9.4.8
+
+# Development Tools
+pre-commit==3.6.0
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+bandit==1.7.5
+safety==2.3.5
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-xdist==3.5.0
+factory-boy==3.3.0
+testcontainers[mongodb,redis]==3.7.1
+faker==20.1.0
+
+# Database Migrations
+alembic==1.13.0
+
+# Utilities
+click==8.1.7
+rich==13.7.0
+typer==0.9.0
+
+# Production WSGI/ASGI
+uvloop==0.19.0
+httptools==0.6.1
