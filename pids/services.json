@@ -1,0 +1,12 @@
+{
+  "subscriptions_api": {
+    "pid": 76599,
+    "port": 8001,
+    "log": "/home/ahmed-elkordy/researchs/applyrush.ai/jobhire-ai-backend/logs/subscriptions_api.log"
+  },
+  "stripe_webhook": {
+    "pid": 76614,
+    "log": "/home/ahmed-elkordy/researchs/applyrush.ai/jobhire-ai-backend/logs/stripe_webhook.log"
+  },
+  "started_at": "2025-10-05T06:54:36Z"
+}

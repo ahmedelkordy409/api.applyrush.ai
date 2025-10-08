@@ -1,0 +1,89 @@
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# MongoDB Database
+motor==3.3.2
+pymongo==4.6.0
+beanie==1.24.0
+
+# Legacy SQL Database (for migration period)
+databases==0.8.0
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+
+# AI and ML
+replicate==0.15.8
+openai==1.3.7
+anthropic==0.34.0
+langchain==0.0.335
+langchain-community==0.0.6
+langgraph==0.2.34
+langchain-openai==0.2.1
+
+# Job APIs
+requests==2.31.0
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Browser automation
+selenium==4.15.2
+webdriver-manager==4.0.1
+playwright==1.40.0
+playwright-stealth==1.0.6
+
+# CAPTCHA Solving
+2captcha-python==1.2.0
+httpx==0.25.2
+
+# Queue system
+celery==5.3.4
+redis==5.0.1
+kombu==5.3.4
+
+# Real-time
+python-socketio==5.10.0
+eventlet==0.33.3
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+PyJWT==2.8.0
+
+# Payment processing
+stripe==7.7.0
+
+# Email
+aiosmtplib==3.0.1
+
+# PDF Processing (for CV parser)
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# Environment and config
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Utilities
+pandas==2.1.3
+numpy==1.25.2
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Monitoring and logging
+structlog==23.2.0
+prometheus-client==0.19.0
+psutil==5.9.6
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1

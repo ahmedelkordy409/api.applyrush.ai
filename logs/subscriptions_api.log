@@ -1,0 +1,90 @@
+/home/ahmed-elkordy/researchs/applyrush.ai/jobhire-ai-backend/run_subscriptions_api.py:67: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  @validator('session_id', 'step_id')
+/home/ahmed-elkordy/researchs/applyrush.ai/jobhire-ai-backend/run_subscriptions_api.py:122: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/home/ahmed-elkordy/researchs/applyrush.ai/jobhire-ai-backend/run_subscriptions_api.py:130: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Started server process [76599]
+INFO:     Waiting for application startup.
+2025-10-05 09:54:32,493 - app.services.mongodb_service - INFO - Connected to MongoDB database: jobhire
+2025-10-05 09:54:32,493 - __main__ - INFO - ✅ MongoDB connected successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+/home/ahmed-elkordy/researchs/applyrush.ai/jobhire-ai-backend/run_subscriptions_api.py:429: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat(),
+
+============================================================
+🚀 Starting ApplyRush.AI Production API Server
+============================================================
+
+🌍 Environment: development
+📍 Server: http://0.0.0.0:8001
+📚 API Docs: http://localhost:8001/docs
+❤️  Health Check: http://localhost:8001/health
+
+🔗 Available endpoints:
+   Guest Onboarding:
+   - POST /api/onboarding/guest/create
+   - POST /api/onboarding/guest/answer
+   Subscriptions:
+   - GET /api/subscriptions/plans
+   - POST /api/subscriptions/validate-coupon
+   - POST /api/subscriptions/create-checkout-session
+   Webhooks:
+   - POST /api/webhooks/stripe
+   Upselling:
+   - GET /api/upselling/recommendations
+
+============================================================
+
+INFO:     127.0.0.1:37616 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37620 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39704 - "OPTIONS /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39712 - "OPTIONS /api/v1/applications/queue/database?status=approved&limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39704 - "GET /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39712 - "GET /api/v1/applications/queue/database?status=approved&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51116 - "GET /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51118 - "GET /api/v1/applications/queue/database?status=approved&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51122 - "GET /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51116 - "GET /api/v1/applications/queue/database?status=approved&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39202 - "GET /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39216 - "GET /api/v1/applications/queue/database?status=approved&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58464 - "GET /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58480 - "GET /api/v1/applications/queue/database?status=pending&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58488 - "GET /api/v1/applications/queue/database?status=approved&limit=20 HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58488 - "OPTIONS /api/v1/users/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58480 - "OPTIONS /api/v1/users/preferences HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58480 - "OPTIONS /api/v1/users/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58504 - "OPTIONS /api/v1/users/preferences HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58488 - "OPTIONS /api/v1/applications/queue/database HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58516 - "GET /api/v1/users/profile HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58518 - "OPTIONS /api/v1/applications/queue/database HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58530 - "GET /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58516 - "GET /api/v1/applications/queue/database HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58530 - "GET /api/v1/users/profile HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58518 - "GET /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58488 - "GET /api/v1/applications/queue/database HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58488 - "PUT /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58488 - "PUT /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58488 - "GET /api/v1/users/profile HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58518 - "GET /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58530 - "GET /api/v1/applications/queue/database HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58518 - "PUT /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58518 - "PUT /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:41740 - "PUT /api/v1/users/preferences HTTP/1.1" 405 Method Not Allowed
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-10-05 10:11:47,667 - app.services.mongodb_service - INFO - Disconnected from MongoDB
+2025-10-05 10:11:47,667 - __main__ - INFO - ✅ MongoDB disconnected
+INFO:     Application shutdown complete.
+INFO:     Finished server process [76599]
